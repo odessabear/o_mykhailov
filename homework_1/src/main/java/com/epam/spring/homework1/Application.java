@@ -7,9 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Application {
     public static void main(String[] args) {
-
         ApplicationContext context = new AnnotationConfigApplicationContext(BeansConfig.class);
-
         Pet pet = context.getBean(Pet.class);
         pet.printPets();
     }

@@ -6,7 +6,6 @@ import java.util.List;
 
 @Component
 public class Pet {
-
     private final List<Animal> animals;
 
     public Pet(List<Animal> animals) {
