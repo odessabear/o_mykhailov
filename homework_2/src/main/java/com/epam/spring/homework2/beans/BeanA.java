@@ -4,7 +4,6 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 
 public class BeanA implements InitializingBean, DisposableBean, ParentBean {
-
     private String name;
     private int value;
 
@@ -17,12 +16,12 @@ public class BeanA implements InitializingBean, DisposableBean, ParentBean {
     }
 
     @Override
-    public void destroy(){
+    public void destroy() {
         System.out.println("From BeanA DisposableBean.destroy() method");
     }
 
     @Override
-    public void afterPropertiesSet(){
+    public void afterPropertiesSet() {
         System.out.println("From BeanA InitializingBean.afterPropertiesSet() method");
     }
 

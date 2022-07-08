@@ -6,7 +6,6 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 
 public class MyCustomBeanPostProcessor implements BeanPostProcessor {
-
     private final BeansValidator validator = new BeansValidatorImpl();
 
     @Override

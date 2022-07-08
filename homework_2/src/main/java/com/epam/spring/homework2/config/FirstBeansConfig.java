@@ -7,7 +7,6 @@ import org.springframework.context.annotation.*;
 @PropertySource("classpath:application.properties")
 @Import(SecondBeansConfig.class)
 public class FirstBeansConfig {
-
     @Bean
     public BeanA beanA() {
         return new BeanA();
@@ -37,7 +36,7 @@ public class FirstBeansConfig {
 
     @Bean
     @Lazy
-    BeanF beanF(){
+    BeanF beanF() {
         return new BeanF();
     }
 }

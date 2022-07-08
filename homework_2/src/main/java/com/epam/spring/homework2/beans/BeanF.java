@@ -1,11 +1,9 @@
 package com.epam.spring.homework2.beans;
 
 
-public class BeanF implements ParentBean{
-
+public class BeanF implements ParentBean {
     private String name;
     private int value;
-
 
     @Override
     public String toString() {

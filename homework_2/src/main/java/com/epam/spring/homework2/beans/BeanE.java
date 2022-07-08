@@ -4,11 +4,9 @@ package com.epam.spring.homework2.beans;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-public class BeanE implements ParentBean{
-
+public class BeanE implements ParentBean {
     private String name;
     private int value;
-
 
     @Override
     public String toString() {
@@ -19,12 +17,12 @@ public class BeanE implements ParentBean{
     }
 
     @PostConstruct
-    public void postConstruct(){
+    public void postConstruct() {
         System.out.println(this.getClass().getSimpleName() + " postConstruct() method");
     }
 
     @PreDestroy
-    public void preDestroy(){
+    public void preDestroy() {
         System.out.println(this.getClass().getSimpleName() + " preDestroy() method");
     }
 

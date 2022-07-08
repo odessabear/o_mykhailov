@@ -2,8 +2,7 @@ package com.epam.spring.homework2.beans;
 
 import org.springframework.beans.factory.annotation.Value;
 
-public class BeanC implements ParentBean{
-
+public class BeanC implements ParentBean {
     @Value("${beanC.name}")
     private String name;
     @Value("${beanC.value}")
@@ -17,11 +16,11 @@ public class BeanC implements ParentBean{
                 '}';
     }
 
-    private void customIntiMethod(){
+    private void customIntiMethod() {
         System.out.println(this.getClass().getSimpleName() + " customIntiMethod()");
     }
 
-    private void customDestroyMethod(){
+    private void customDestroyMethod() {
         System.out.println(this.getClass().getSimpleName() + " customDestroyMethod");
     }
 
